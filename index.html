@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bihari Food Blog</title>
+    <style>
+        .header_container{
+            width:100%;
+            display: flex;
+            flex-direction:column;
+        }
+        .header_name{
+            display: flex;
+            justify-content: center;
+            
+        }
+        h2{
+            width:12rem;
+            padding:2px;
+            background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+            border-radius: 15px;
+            color: White;
+            font-family: cursive;
+            font-style: italic;
+        }
+        .header_description{
+            display: flex;
+            justify-content: center;
+        }
+        .main_container{
+            display: flex;
+            justify-content: center;
+        }
+        .card_container{
+            width:1500px;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            gap:60px;
+            flex-wrap: wrap;
+        }
+        .card_food{
+            display: flex;
+            width:300px;
+            height: 450px;
+            border-radius: 10px;;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            flex-direction: column;
+            justify-content: center;
+            transition: 0.5s ease;
+            &:hover {
+                transform: scale(1.2);
+              }
+              &:hover::after {
+                transform: translateY(10%) scale(0.9);
+              }
+            }
+        .heading{
+            margin-left: 20px;
+        }
+        .description{
+            margin-left: 20px;
+        }
+        img{
+            width: 100%;
+            height: 225px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        #img2{
+            height:260px;
+        }
+        #img3{
+            height:250px;
+        }
+        #img4{
+            height:210px;
+        }
+        #img5{
+            height:260px;
+        }
+        #img7{
+            height: 260px;
+        }
+        #img8{
+            height:210px;
+        }
+
+        
+        .footer_container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .footer_description{
+            margin-bottom: 2px;
+            border-radius: 8px;
+            background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+        }
+        .author_name{
+            margin-top: 2px;
+            border-radius: 8px;
+            background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="header_container">
+        <div class="header_name">
+            <h2> Bihari Food Blog</h2>
+        </div>
+        <div class="header_description">Dear Visitor, I welcome you to the world of taste of Bihar. Have a great fooding Experience. Enjoy!
+        </div>
+    </header>
+    <main>
+        <div class="main_container">
+            <div class="card_container">
+                <div class="card_food" id="card1">
+                    <div id="image_conatiner">
+                        <img src="images/chicken curry.jpg" alt="chicken curry">
+                    </div>
+                    <div id="description_container">
+                        <p class="heading"><b>Bihari Chicken Curry</b></p>
+                        <p class="description">A unique chicken preparation from yet another state in India, this Bihari chicken curry is one of those gems that you absolutely must try at least once! Made with caramelised onions and whole garlic pods, this one’s delicious and heartwarming at the same time.</p>
+                        <p style="margin-left:20px;"><a href="https://myfoodstory.com/bihari-chicken-curry/">Recipe (Click here)</a></p>
+                    </div>
+                </div>
+                <div class="card_food" id="card2">
+                    <div id="image_conatiner">
+                        <img src="images/mutton kaleji.jpg" alt="Mutton Kaleji" id="img2">
+                    </div>
+                    <div id="description_container">
+                        <p class="heading"><b>Mutton Kaleji</b></p>
+                        <p class="description">We as Bihari love Mutton. Mutton kaleji, also known as mutton liver, is a lean, nutritious organ meat that's high in protein and vitamins A, B, and D, and low in saturated fat.</p>
+                        <p style="margin-left:20px;"><a href="https://www.youtube.com/watch?v=3Ty0nlqSch8">Recipe (Click here)</a></p>
+                    </div>
+                </div>
+                <div class="card_food" id="card3">
+                    <div id="image_conatiner">
+                        <img src="images/mutton curry.jpg" alt="Mutton curry" id="img3">
+                    </div>
+                    <div id="description_container">
+                        <p class="heading"><b>Bihari Mutton Curry</b></p>
+                        <p class="description">We as Bihari we love mutton. Mutton curry (also referred to as kosha mangsho, lamb curry, or goat curry) is a dish that is prepared from goat meat (or sometimes lamb meat) and vegetables. </p>
+                        <p style="margin-left:20px; "><a href="https://theartisticcook.com/easy-mutton-curry/">Recipe (Click here)</a></p>
+                    </div>
+                </div>
+                <div class="card_food" id="card4">
+                    <div id="image_conatiner">
+                        <img src="images/jhinga .jpg" alt="Prawn(Jhinga) curry" id="img4">
+                    </div>
+                    <div id="description_container">
+                        <p class="heading"><b>Bihari Prawn (Jhinga) Fry</b></p>
+                        <p class="description">The taste of prawns and shrimp are also quite similar, although prawns are generally considered to be slightly sweeter. The biggest difference in taste is likely due to the fact that prawns are typically larger and therefore have a greater flesh-to-shell ratio.</p>
+                        <p style="margin-left:20px;"><a href="https://www.slurrp.com/article/make-the-perfect-bihari-style-prawn-curry-at-home-1660493625064">Recipe (Click here)</a></p>
+                    </div>
+                </div>
+                <div class="card_food" id="card5">
+                    <div id="image_conatiner">
+                        <img src="images/anda-pakoda.jpg" alt="Anda-Pakoda Curry" id="img5">
+                    </div>
+                    <div id="description_container">
+                        <p class="heading"><b>Anda-Pakoda Curry</b></p>
+                        <p class="description">Egg Pakora is a crispy pakora in which boiled and spiced egg is dipped in besan or gram flour batter batter and then deep-fried to golden perfection.</p>
+                        <p style="margin-left:20px;"><a href="https://www.betterbutter.in/recipe/19010/egg-pakora-curry/">Recipe (Click here)</a></p>
+                    </div>
+                </div>
+                <div class="card_food" id="card6">
+                    <div id="image_conatiner">
+                        <img src="images/Litti chicken.jpeg" alt="litti-chicken" id="img6">
+                    </div>
+                    <div id="description_container">
+                        <p class="heading"><b>Litti-Chicken</b></p>
+                        <p class="description">You may have heard of Litti-Chokha famous food of bihar, but there is another invention from our own bihar that is Litti-Chicken. The delicious in-fusion of Champaran chicken with litti tastes heavenly good.</p>
+                        <p style="margin-left:20px;"><a href="https://www.reddit.com/r/bihar/comments/18p4q1r/taste_of_bihar_beyond_litti_chokha_the_chicken/">Recipe (Click here)</a></p>
+                    </div>
+                </div>
+                <div class="card_food" id="card7">
+                    <div id="image_conatiner">
+                        <img src="images/Dahi-vada.jpg" alt="Dahi-vada" id="img7">
+                    </div>
+                    <div id="description_container">
+                        <p class="heading"><b>Dahi-Vada</b></p>
+                        <p class="description">The Fusion of dahi and vada tastes awesome. This is a must have dish in festivals like Holi and Diwali in every Bihar's home.</p>
+                        <p style="margin-left:20px;"><a href="https://www.indianhealthyrecipes.com/dahi-vada-recipe/">Recipe (Click here)</a></p>
+                    </div>
+                </div>
+                <div class="card_food" id="card8">
+                    <div id="image_conatiner">
+                        <img src="images/litti chokha.jpeg" alt="litti chokha" id="img8">
+                    </div>
+                    <div id="description_container">
+                        <p class="heading"><b>Litti-chokha</b></p>
+                        <p class="description">Litti Chokha is more than just a culinary delight; it is a symbol of Bihari cuisine and culture. It reflects the simplicity and earthiness of Bihar's rural landscape. The dish is a staple at traditional festivals, gatherings, and meals, representing the essence of local hospitality and tradition.</p>
+                        <p style="margin-left:20px;"><a href="https://www.vegrecipesofindia.com/litti-chokha-recipe/">Recipe (Click here)</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <p class="footer_description">Made with love, and to Introduce Bihari Taste</p>
+            <p class="author_name">Created by <b>Arin Sujal</b></p>
+        </div>
+    </footer>
+</body>
+</html>
